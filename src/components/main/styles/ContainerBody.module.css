@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 170px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* .BGwhite{   
+    background-color: white;
+} */
+.BGgray{
+    background-color: #e2dedf;
+}
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    color: #3f444a;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.headWithColor{
+    color: #868d0d;
+}
+.subheading{
+    font-size: 18px;
+    color: #3f444a;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0px 40px;
+}
+.tilesBox{
+    display: flex;
+    flex-wrap: wrap;
+}
