@@ -1,0 +1,25 @@
+.box {
+    font-family: 'Open Sans', sans-serif;
+    width: 55%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.data>div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data>div>span {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    /* color: #413f3f; */
+}
+
+.data>div>p {
+    display: inline;
+}
+.headingColor{
+    color: #413f3f;
+}
