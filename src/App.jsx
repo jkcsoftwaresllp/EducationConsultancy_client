@@ -3,11 +3,11 @@ import Home from './pages/home';
 
 function App() {
   return (
-    <Router>
+    // <Router>  <--- Creating error
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-    </Router>
+    // </Router>
   );
 }
 

@@ -1,5 +1,6 @@
 import TopBar from '../components/topBar/topBar';
 import Navbar from '../components/navBar/navBar';
+import HoverTile from '../components/courseDetails/HoverTile';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
         email="info@admissionexperts.co.in"
       />
       <Navbar />
+      {/* <HoverTile/> */}
       {/* Other home content goes here */}
     </>
   );

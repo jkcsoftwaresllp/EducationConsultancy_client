@@ -4,10 +4,41 @@
   align-items: center;
   background-color: white;
   padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
-  position: relative;
+  /* border-bottom: 1px solid #ddd; */
+  /* position: relative; */
+}
+/* ///// */
+.hoverBox0,
+.hoverBox1,
+.hoverBox2,
+.hoverBox3,
+.hoverBox4 {
+  /* position: absolute; */
+  /* top: 100%; */
+  /* left: 0; */
+  /* padding: 10px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  /* z-index: 10; */
+  /* white-space: nowrap; */
 }
 
+/* Show box on hover */
+.linkWrapper:hover .hoverBox0,
+.linkWrapper:hover .hoverBox1,
+.linkWrapper:hover .hoverBox2,
+.linkWrapper:hover .hoverBox3,
+.linkWrapper:hover .hoverBox4 {
+  opacity: 1;
+  /* transform: translateY(0); */
+  pointer-events: auto;
+}
+/* /// */
 .logo {
   font-size: 24px;
 }
