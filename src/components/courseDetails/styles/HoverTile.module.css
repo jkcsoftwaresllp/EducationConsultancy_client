@@ -8,8 +8,10 @@
     /* right: 0px; */
     /* left: 0px; */
     /* top: 100px; */
-    top: 0px;
+    top: -10px;
+    padding-top: 40px;
     transition: all 0.3s ease;
+    /* background-color: rgb(253 230 138); */
 }
 
 .box {
@@ -45,6 +47,10 @@ li:first-child{
     font-weight: 400;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+.box>ul>li:hover{
+    color: #e66030;
 }
 
 ul li::before {

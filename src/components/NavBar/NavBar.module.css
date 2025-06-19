@@ -12,7 +12,9 @@
 .hoverBox1,
 .hoverBox2,
 .hoverBox3,
-.hoverBox4 {
+.hoverBox4,
+.hoverBox5,
+.hoverBox6 {
   /* position: absolute; */
   /* top: 100%; */
   /* left: 0; */
@@ -21,6 +23,7 @@
   color: black;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
   opacity: 0;
+  /* display: none; */
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
@@ -33,8 +36,11 @@
 .linkWrapper:hover .hoverBox1,
 .linkWrapper:hover .hoverBox2,
 .linkWrapper:hover .hoverBox3,
-.linkWrapper:hover .hoverBox4 {
+.linkWrapper:hover .hoverBox4,
+.linkWrapper:hover .hoverBox5,
+.linkWrapper:hover .hoverBox6 {
   opacity: 1;
+  /* display: block; */
   /* transform: translateY(0); */
   pointer-events: auto;
 }
