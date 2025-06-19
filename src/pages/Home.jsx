@@ -1,8 +1,12 @@
-import TopBar from '../components/topBar/topBar';
-import Navbar from '../components/navBar/navBar';
-import HoverTile from '../components/courseDetails/HoverTile';
+import TopBar from "../components/topBar/topBar";
+import Navbar from "../components/navBar/navBar";
+import { useState } from "react";
+// import {HoverTile} from '../components/courseDetails/HoverTile';
 
 function Home() {
+
+  const [courseUrl, setCourseUrl] = useState("/")
+
   return (
     <>
       <TopBar
@@ -10,9 +14,11 @@ function Home() {
         phone="+91-097080 44044"
         email="info@admissionexperts.co.in"
       />
-      <Navbar />
-      {/* <HoverTile/> */}
-      {/* Other home content goes here */}
+      <Navbar
+        onCourseClick={(value) => {
+          console.log(value);
+        }}
+      />
     </>
   );
 }
