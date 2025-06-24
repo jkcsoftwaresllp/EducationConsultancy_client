@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  /* border-bottom: 1px solid #ddd; */
+  /* position: relative; */
+}
+/* ///// */
+.hoverBox0,
+.hoverBox1,
+.hoverBox2,
+.hoverBox3,
+.hoverBox4,
+.hoverBox5,
+.hoverBox6 {
+  /* position: absolute; */
+  /* top: 100%; */
+  /* left: 0; */
+  /* padding: 10px;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
+  opacity: 0;
+  /* display: none; */
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  /* z-index: 10; */
+  /* white-space: nowrap; */
+}
+
+/* Show box on hover */
+.linkWrapper:hover .hoverBox0,
+.linkWrapper:hover .hoverBox1,
+.linkWrapper:hover .hoverBox2,
+.linkWrapper:hover .hoverBox3,
+.linkWrapper:hover .hoverBox4,
+.linkWrapper:hover .hoverBox5,
+.linkWrapper:hover .hoverBox6 {
+  opacity: 1;
+  /* display: block; */
+  /* transform: translateY(0); */
+  pointer-events: auto;
+}
+/* /// */
+.logo {
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
