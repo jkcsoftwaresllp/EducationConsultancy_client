@@ -11,6 +11,7 @@
     top: -10px;
     padding-top: 40px;
     transition: all 0.3s ease;
+    background-color: white;
     /* background-color: rgb(253 230 138); */
 }
 
@@ -37,9 +38,9 @@
     padding: 0;
     margin: 0;
 }
-li:first-child{
+/* li:first-child{
     display: none;
-}
+} */
 .box>ul>li {
     color: #413f3f;
     line-height: 24px;
