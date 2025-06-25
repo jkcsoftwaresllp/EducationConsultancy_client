@@ -8,6 +8,7 @@ import {MTech} from "./components/coursesRoutes/MTech";
 import Phd from "./components/coursesRoutes/Phd";
 import DiplomaCourses from "./components/coursesRoutes/DiplomaCourses";
 import Mbbs from "./components/coursesRoutes/Mbbs";
+import Md from "./components/coursesRoutes/Md";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("/");
@@ -45,7 +46,7 @@ function App() {
         <Route path="/courses-phd" element={<Phd/>} />
         <Route path="/courses-diploma-courses" element={<DiplomaCourses/>} />
         <Route path="/courses-mbbs" element={<Mbbs/>} />
-        
+        <Route path="/courses-md" element={<Md/>} />        
       </Routes>
     </>
   );
