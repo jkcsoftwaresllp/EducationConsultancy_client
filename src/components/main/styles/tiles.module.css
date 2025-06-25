@@ -14,6 +14,10 @@
     box-shadow: 0px 10px 10px -10px black ;  
     transform: scale(1.02);
 }
+.container>div>img{
+    width: 120px;
+    height: 110px;
+}
 .tittles>h1{
     font-size: 20px;
 }
@@ -27,12 +31,16 @@
 }
 .tittles{
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
     margin-bottom: 12px;
 }
 .courses>h4{
     font-weight: 300;
     margin-bottom: 30px;
+}
+.courses{
+    /* background-color: rgb(254 202 202); */
+    width: 380px;
 }
 .btn{
     width: fit-content;
