@@ -1,0 +1,225 @@
+.Header {
+    background-color: rgb(252, 91, 91);
+    margin: 20px 50px;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Header>h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: white;
+    margin-top: 70px;
+
+
+}
+
+.Header>h2 {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    width: 800px;
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 25px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftSection {
+    width: 43%;
+    background-color: rgb(255, 197, 196);
+    height: 800px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+}
+
+.leftSection>h1 {
+    font-weight: 900;
+    line-height: 24px;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.leftSection>span {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: blue;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.leftSection>h2 {
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.card{
+    background-color: white;
+    height: 280px;
+    width: 250px;
+    border-radius: 30px;
+}
+.card>h1{
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.card>p{
+    color: rgb(32, 32, 32);
+    width: 160px;
+    margin: auto;
+    line-height: 24px;
+}
+.CardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 40px;
+}
+/*  */
+/*  */
+.rightSection {
+    /* width: 43%; */
+    /* background-color: rgb(29 78 216); */
+    /* height: 500px; */
+}
+
+.inputBox>div>input {
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    height: 2.5rem;
+    padding-left: 15px;
+    box-sizing: content-box;
+    font-size: 12px;
+}
+.inputBox>div>input:focus , .inputBox>div>textarea:focus {
+    border: 1px solid rgb(74, 173, 254);
+}
+
+.inputBox>div>textarea {
+    background-color: white;
+    color: black;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    height: 80px;
+    padding: 20px;
+    box-shadow: none;
+    box-sizing: content-box;
+    font-size: 12px;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.nameDiv {
+    width: 200px;
+    margin-right: 50px;
+    margin-top: 40px;
+    padding-right: 10px;
+
+}
+
+.phoneDiv {
+    width: 200px;
+    margin-top: 40px;
+    padding-right: 10px;
+
+}
+
+.EmailDiv {
+    width: 460px;;
+    margin-top: 40px;
+    padding-right: 10px;
+}
+.messageDiv{
+    width: 440px;;
+    margin-top: 40px;
+    padding-right: 10px;
+    margin-left: -20px;
+
+}
+
+.inputBox>div>input::placeholder {
+    color: rgb(103, 102, 102);
+}
+
+.form {
+    margin: auto;
+    margin-top: 90px;
+    width: 600px;
+    background-color: rgb(255, 244, 244);
+    padding: 50px 10px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.form>h1{ 
+    font-size: 48px;
+    color: #e66030;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.form>h2{
+color: rgb(85, 178, 255);
+text-align: center;
+}
+.btn {
+    text-align: center !important;
+    padding: 0.8rem !important;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    background: #f4364f;
+    color: #fff;
+    padding: 2px 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    outline: none;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cross{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}

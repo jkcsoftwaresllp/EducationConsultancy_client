@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
+import { Routes, Route, useNavigate, Navigate, Form } from "react-router-dom";
 import Home from "./pages/home";
 import TopBar from "./components/topBar/topBar";
 import Navbar from "./components/navBar/navBar";
@@ -9,9 +9,12 @@ import Phd from "./components/coursesRoutes/Phd";
 import DiplomaCourses from "./components/coursesRoutes/DiplomaCourses";
 import Mbbs from "./components/coursesRoutes/Mbbs";
 import Md from "./components/coursesRoutes/Md";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import EnquiryForm from "./pages/EnquiryForm";
 
 function App() {
-  const [courseUrl, setCourseUrl] = useState("/");
+  const [courseUrl, setCourseUrl] = useState("");
   console.log(courseUrl)
   const navigate = useNavigate()
   useEffect(()=>{
@@ -38,15 +41,19 @@ function App() {
           setCourseUrl(`/${kebabValue}`);
         }}
       />
+      {/* <button>Register</button> */}
+      <EnquiryForm />
      
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/courses-be-btech" element={<BTech/>} />
         <Route path="/courses-me-mtech" element={<MTech/>} />
         <Route path="/courses-phd" element={<Phd/>} />
         <Route path="/courses-diploma-courses" element={<DiplomaCourses/>} />
         <Route path="/courses-mbbs" element={<Mbbs/>} />
-        <Route path="/courses-md" element={<Md/>} />        
+        <Route path="/courses-md" element={<Md/>} />    
+        <Route path="/about-us" element={<AboutUs />} />    
+        <Route path="/contact-us" element={<ContactUs />} />    
       </Routes>
     </>
   );

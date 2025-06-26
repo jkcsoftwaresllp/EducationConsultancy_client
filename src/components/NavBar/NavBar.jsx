@@ -16,8 +16,18 @@ function Navbar({ onCourseClick }) {
 
       <div className={styles.links}>
         {menuLinks.map(({ label, boxes, offset }, index) => (
+
+
           <div key={label} className={styles.linkWrapper}>
-            <a className={styles[`link${index}`]} href="#">
+            <a
+              className={styles[`link${index}`]}
+              onClick={(e) => {
+                e.preventDefault(); // prevents # navigation
+                onCourseClick(label); // this will trigger navigate via App
+              }}
+              // href={label === "ABOUT US" ? `/${label.toLowerCase().replace(/\s+/g, '-')}` : "/"  }
+              href="#"
+            >
               {label}
             </a>
             {boxes && (

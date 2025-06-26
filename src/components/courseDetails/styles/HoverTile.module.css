@@ -13,10 +13,12 @@
     transition: all 0.3s ease;
     background-color: white;
     /* background-color: rgb(253 230 138); */
+    /* z-index: 100; */
 }
 
 .box {
     width: 25vw;
+    /* z-index: 100; */
 }
 
 .box>h1 {
