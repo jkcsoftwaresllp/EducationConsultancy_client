@@ -1,7 +1,14 @@
 import styles from './TopBar.module.css';
 import HeaderButton from '../HeaderButton/HeaderButton';
+import { useState } from 'react';
+import EnquiryForm from '../../pages/EnquiryForm';
+import { useFormContext } from '../../context/FormContext';
+import Button1 from '../buttons/Button1';
 
 function TopBar({ address, phone, email }) {
+
+  const { showForm, setShowForm } = useFormContext();
+
   return (
     <div className={styles.topBar}>
       <div className={styles.left}>
@@ -10,10 +17,12 @@ function TopBar({ address, phone, email }) {
         <span>Email: {email}</span>
       </div>
       <div className={styles.right}>
-        <HeaderButton label="ENQUIRY NOW" variant="orange" />
-        <HeaderButton label="BLOGS" variant="blue" />
-        <HeaderButton label="LOGIN" variant="green" />
-        <HeaderButton label="SIGN UP" variant="red" />
+        <Button1 color={"red"} text={"ENQUIRY NOW"} />
+        <Button1 text={"BLOGS"} />
+        {/* <HeaderButton onClick={() => setShowForm(true)} label="ENQUIRY NOW" variant="orange" />
+        <HeaderButton label="BLOGS" variant="blue" /> */}
+        {/* <HeaderButton label="LOGIN" variant="green" />
+        <HeaderButton label="SIGN UP" variant="red" /> */}
       </div>
     </div>
   );

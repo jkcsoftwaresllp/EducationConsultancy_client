@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles/tiles.module.css'
 import firstimg from '../../assets/first-img.jpg'
+import Button1 from '../buttons/Button1'
 function Tile({ tittle , college , courses , image , onclick }) {
     return (
         <div className={styles.container} >
@@ -13,8 +14,8 @@ function Tile({ tittle , college , courses , image , onclick }) {
                 <div className={styles.courses} >
                     <h4>{courses}</h4>
                 </div>
-
-                <button onClick={onclick} className={styles.btn} >APPLY HERE</button>
+                <Button1 color={"red"} text={"APPLY NOW"} />
+                {/* <button onClick={onclick} className={styles.btn} >APPLY HERE</button> */}
             </div>
         </div>
     )

@@ -1,0 +1,39 @@
+.box{
+    font-family: 'Open Sans', sans-serif;
+}
+.tileBox {
+  width: 330px;
+  padding: 30px 20px;
+  background-color: var(--primary-gray);
+  border: 1px solid #aaa9a9;
+  display: flex;
+  gap: 20px;
+}
+.rightSide{
+    width: 230px;
+}
+
+.tileImage {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.tileTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tileDescription {
+  font-size: 13px;
+  color: var(--gray-medium);
+  margin-bottom: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 60px;
+}
+
