@@ -1,8 +1,11 @@
 .container{
     height: 340px;
-    background-image: url('../../../assets/TittleContainerBG.jpg');
+    /* background-image: url('../../../assets/TittleContainerBG.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)),
+                    url('../../../assets/TittleContainerBG.jpg');
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.422);
     color: white;
     /* font-family: 'Open Sans', sans-serif; */
     font-family: sans-serif;

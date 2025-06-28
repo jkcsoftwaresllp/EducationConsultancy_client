@@ -4,16 +4,6 @@ import image from '../../assets/first-img.jpg'
 import Button1 from '../buttons/Button1'
 function Tile2({ imageSrc, title, description, onReadMore, onEnquiry }) {
     return (
-        // <div className={styles.box} >
-        //     <div className={styles.leftSide}>
-        //         <img src={image} alt="" />
-        //     </div>
-        //     <div className={styles.rightSide}>
-        //         <h1>Explore Top Colleges</h1>
-        //         <p>Choose among the Best Colleges in India based on Location, Fees offered and Counselling and Much More.get admission</p>
-        //     </div>
-
-        // </div>
         <div className={styles.tileBox}>
             <div className={styles.leftSide}>
                 <img src={imageSrc} alt="icon" className={styles.tileImage} />
@@ -22,10 +12,8 @@ function Tile2({ imageSrc, title, description, onReadMore, onEnquiry }) {
                 <h2 className={styles.tileTitle}>{title}</h2>
                 <p className={styles.tileDescription}>{description}</p>
                 <div className={styles.buttonGroup}>
-                    {/* <button className={styles.readMoreBtn} onClick={onReadMore}>Read more</button> */}
                     <Button1 color={"red"} text={"Read More"} />
                     <Button1  text={"Make Enquiry"} />
-                    {/* <button className={styles.enquiryBtn} onClick={onEnquiry}>Make Enquiry</button> */}
                 </div>
             </div>
 

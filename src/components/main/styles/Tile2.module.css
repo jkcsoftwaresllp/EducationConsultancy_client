@@ -1,17 +1,11 @@
 .box{
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(239 238 238);
-    /* width: 33%;
-    display: ; */
-    /* height: 300px; */
 }
 .tileBox {
   width: 330px;
   padding: 30px 20px;
-    background-color: rgb(239 238 238);
-  border: 1px solid #ddd;
-  /* border-radius: 8px; */
-  /* text-align: center; */
+  background-color: var(--primary-gray);
+  border: 1px solid #aaa9a9;
   display: flex;
   gap: 20px;
 }
@@ -33,7 +27,7 @@
 
 .tileDescription {
   font-size: 13px;
-  color: #333;
+  color: var(--gray-medium);
   margin-bottom: 20px;
 }
 
@@ -43,22 +37,3 @@
   margin-top: 60px;
 }
 
-.readMoreBtn {
-  background-color: #e63946;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 12px;
-}
-
-.enquiryBtn {
-  background-color: #b2b60d;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 12px;
-}

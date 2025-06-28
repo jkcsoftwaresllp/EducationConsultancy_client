@@ -1,9 +1,11 @@
 .container {
     height: fit-content;
-    background-image: url('../../../assets/TittleContainerBG.jpg');
+    /* background-image: url('../../../assets/FormContainerBG.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)),
+                    url('../../../assets/FormContainerBG.jpg');
     background-size: cover;
     background-position: bottom;
-    color: white;
+    color: var(--text-light);
     font-family: 'Open Sans', sans-serif;
     border-bottom: 4px solid white;
 }
@@ -65,7 +67,7 @@
 }
 
 .leftContainerDown:hover {
-    background-color: #e66030;
+    background-color: var(--primary-orange);
     transform: scale(1.1);
 }
 
@@ -89,7 +91,7 @@
 .form {
     width: 90%;
     height: 350px;
-    background-color: #140c9375;
+    background-color: var(--form1-bg);
     border: 1px solid white;
     border-radius: 5px;
     padding: 40px 0px;
@@ -171,7 +173,7 @@ div>input::placeholder {
 }
 .btn{
     background: #e66030;
-    color: #fff;
+    color: var(--text-light);
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;

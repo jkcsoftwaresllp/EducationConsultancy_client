@@ -6,23 +6,12 @@
     /* background-color: rgb(255, 62, 62); */
     font-size: 12px;
     font-weight: 700;
-    padding: 7px 20px ;
+    padding: 7px 18px ;
     border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
     border: none;
     outline: none;
     cursor: pointer;
-    color: white;
+    color: var(--text-light);
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: backdrop */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
+

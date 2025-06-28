@@ -43,8 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b02b2b;
-  color: white;
+  background-color: var(--background-blue-dark);
+  color: var(--text-light);
   padding: 8px 20px;
   font-size: 14px;
   flex-wrap: wrap;
@@ -64,6 +64,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  gap: 10px;
 }
 
 @media (max-width: 768px) {

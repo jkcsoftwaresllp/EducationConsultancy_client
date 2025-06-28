@@ -12,6 +12,7 @@ import Md from "./components/coursesRoutes/Md";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import EnquiryForm from "./pages/EnquiryForm";
+import Footer from "./components/footer/footer";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -31,21 +32,22 @@ function App() {
   return (
     <>
       <TopBar
-        address="5A, Bhagwati Sharan Enclave, Boring Road, Patna-1"
-        phone="+91-097080 44044"
-        email="info@admissionexperts.co.in"
+        address="511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001"
+        phone="+91 93043 65563"
+        email="info@thecareeezone.co.in"
       />
       <Navbar
         onCourseClick={(value) => {
           const kebabValue = toKebabCase(value);
-          setCourseUrl(`/${kebabValue}`);
+          (kebabValue === "home") ? setCourseUrl(`/`) : setCourseUrl(`/${kebabValue}`);
         }}
       />
       {/* <button>Register</button> */}
       <EnquiryForm />
+      
      
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/courses-be-btech" element={<BTech/>} />
         <Route path="/courses-me-mtech" element={<MTech/>} />
         <Route path="/courses-phd" element={<Phd/>} />
@@ -55,6 +57,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />    
         <Route path="/contact-us" element={<ContactUs />} />    
       </Routes>
+      <Footer/>
     </>
   );
 }

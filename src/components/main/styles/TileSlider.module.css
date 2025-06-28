@@ -7,9 +7,9 @@
 
 
 .Container {
-    background-color: #898f1f;
+    background-color: var(--primary-green);
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: var(--text-light);
     padding: 10px 50px;
 }
 

@@ -18,7 +18,7 @@ function ContactUs() {
         <div>
             <div className={styles.Header} >
                 <h1>Get in Touch</h1>
-                <h2>Have questions about Admission Expert? Need help getting started? Our team is here to help you succeed. Reach out to us anytime.</h2>
+                <h2>Have questions about THE CAREER ZONE ? Need help getting started? Our team is here to help you succeed. Reach out to us anytime.</h2>
             </div>
             <div className={styles.body} >
                 <div className={styles.leftSection} >
@@ -27,12 +27,12 @@ function ContactUs() {
                     <h2>Multiple ways to reach us. Choose what works best for you.</h2>
                     <div className={styles.CardContainer} >
                         <div className={styles.card} >
-                            <h1>Experts</h1>
-                            <p>Admission Expert is one of the leading educational consultancy in Bihar and also throughout..</p>
+                            <h1>Experience</h1>
+                            <p>20+ Years in Education & Admission Guidance 5000+ Successful Admissions</p>
                         </div>
                         <div className={styles.card} >
                             <h1>Address</h1>
-                            <p>Address: 5A, Bhagwati Sharan Enclave, Above Nirvana Restaurant, Boring Road, Patna, Bihar 800001</p>
+                            <p>Address:511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001</p>
                         </div>
                         <div className={styles.card} >
                             <h1>Contact info</h1>
@@ -41,7 +41,7 @@ function ContactUs() {
                         </div>
                         <div className={styles.card} >
                             <h1>Website</h1>
-                            <p>Website: www.admissionexperts .co.in Facebook: Facebook .com/admissionexpert .patna</p>
+                            <p>Website: www.thecareerzone .co.in Facebook: Facebook .com/thecareerzone .patna</p>
                         </div>
                     </div>
                 </div>

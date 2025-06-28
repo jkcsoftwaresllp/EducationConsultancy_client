@@ -14,7 +14,7 @@ function Home() {
   return <>
     <TittleContainer tittle={"Best Educational Consultancy in Patna"} subTittle={"Find Colleges, Courses & Exams that are Best for You"} discription={"450 + University   |4040 + Colleges   |   221 + Courses   | 861+ Sub Courses   | 100 + Exams"} />
     <FormContainer />
-    <ContainerBody background={1} tittleWithWhite={"Select Your"} tittleWithColor={"Study Goal"} subheading={"Reset your research strategy with top admission consultancy in patna by browsing through our lists of top colleges, exams,courses and careers based on your area of interest!"} >
+    <ContainerBody background={1} tittleWithWhite={"Select Your "} tittleWithColor={"Study Goal"} subheading={"Reset your research strategy with top admission consultancy in patna by browsing through our lists of top colleges, exams,courses and careers based on your area of interest!"} >
       {tilesData.map((tile, index) => (
         <Tile
           key={index}

@@ -3,7 +3,7 @@
   border: none;
   border-radius: 3px;
   font-weight: bold;
-  color: white;
+  color: var(--text-light);
   cursor: pointer;
   margin-left: 8px;
   margin-bottom: 5px;
@@ -12,11 +12,11 @@
 
 /* Color Variants */
 .orange {
-  background-color: #f76b1c;
+  background-color: var(--button3-bg);
 }
 
 .blue {
-  background-color: #003d73;
+  background-color: var(--button2-bg);
 }
 
 .green {

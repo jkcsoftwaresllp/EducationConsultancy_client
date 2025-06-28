@@ -8,7 +8,7 @@ import ParaTiles from '../components/courseDetails/ParaTiles'
 function AboutUs() {
     return (
         <div>
-            <Header tittle={"About Us"}  BGimage={image} />
+            <Header tittle={"About Us"} BGimage={image} />
             <div className={styles.body} >
                 <div className={styles.LeftSection} >
                     <img src={logo} alt="" />
@@ -23,7 +23,7 @@ function AboutUs() {
                     <h1>About The Career Zone</h1>
                     <h2>
                         Welcome to THE CAREER ZONE – your trusted partner in educational guidance and career consultancy for over two decades.
-                        </h2>
+                    </h2>
                     <h2>Founded with a vision to empower students and bridge the gap between ambition and opportunity, THE CAREER ZONE has been at the forefront of admission consultancy services in India for the last 20+ years. With a proven track record of guiding over 5000+ students into prestigious institutions across the country, we take immense pride in being one of the most reliable names in the education consultancy domain.</h2>
                     <h2>At THE CAREER ZONE, we believe that every student deserves the right guidance to unlock their full potential. Whether you aspire to pursue Engineering, Medical, Law, Management, or any other field, we are here to help you make informed decisions and choose the right academic path that aligns with your goals.</h2>
                     <h2>Our consultancy provides access to a wide range of undergraduate, postgraduate, diploma, and professional courses across all states and cities of India. We have established strong affiliations with reputed universities and colleges, ensuring that our students receive the best admission support and career advice tailored to their aspirations and academic background.</h2>
