@@ -5,14 +5,14 @@ import { useForm } from 'react-hook-form';
 function ContactUs() {
 
     const {
-            register,
-            handleSubmit,
-            formState: { errors },
-        } = useForm();
-    
-        const onSubmit = (data) => {
-            console.log('Form Data:', data);
-        };
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm();
+
+    const onSubmit = (data) => {
+        console.log('Form Data:', data);
+    };
 
     return (
         <div>

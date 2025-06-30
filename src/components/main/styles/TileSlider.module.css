@@ -7,19 +7,20 @@
 
 
 .Container {
-    background-color: var(--primary-green);
+    /* background-color: var(--primary-green); */
     font-family: 'Open Sans', sans-serif;
     color: var(--text-light);
     padding: 10px 50px;
 }
 
 .Container>h1 {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 24px;
     font-size: 24px;
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--primary-green);
     padding: 25px 20px;
+    color: var(--primary-green);
 }
 
 .sliderTrack {

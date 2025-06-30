@@ -1,7 +1,7 @@
 .Header {
     background-color: var(--primary-blue-dark);
     margin: 20px 50px;
-    border-radius: 15px;
+    border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -32,16 +32,17 @@
 
 .body {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
 }
 
 .leftSection {
-    width: 43%;
-    background-color: var(--primary-blue-medium);
-    height: 800px;
+    width: 40%;
+    background-color: var(--primary-blue-dark);
+    height: 700px;
     font-family: 'Open Sans', sans-serif;
-    border-radius: 15px;
-    border: 2px solid #38266a;
+    border-radius: 3px;
+    border: 2px solid #43674b;
 }
 
 .leftSection>h1 {
@@ -74,21 +75,21 @@
 }
 .card{
     background-color: var(--background-white);
-    height: 280px;
-    width: 250px;
+    height: 220px;
+    width: 230px;
     border-radius: 30px;
 }
 .card>h1{
     font-size: 25px;
     font-weight: 700;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 30px;
 }
 .card>p{
     color: var(--text-dark);
-    width: 160px;
-    margin: auto;
+    width: 190px;
+    margin-left: 30px;
     line-height: 24px;
 }
 .CardContainer{
@@ -130,7 +131,7 @@
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
-    height: 80px;
+    height: 95px;
     padding: 20px;
     box-shadow: none;
     box-sizing: content-box;
@@ -179,17 +180,16 @@
 
 .form {
     margin: auto;
-    margin-top: 90px;
+    /* margin-top: 10px; */
     width: 600px;
-    background-color: var(--primary-blue-light);
+    background-color: var(--primary-blue-dark);
     padding: 50px 10px;
-    border-radius: 15px;
+    border-radius: 3px;
     position: relative;
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     font-family: 'Open Sans', sans-serif;
-    border-top: 4px solid #2e65ff;
-    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.2),  /* left & bottom */
-     4px 4px 15px rgba(0, 0, 0, 0.2);  /* right & bottom */
+    border-top: 4px solid #334f39;
+    /* box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.2),  
+     4px 4px 15px rgba(0, 0, 0, 0.2);   */
 
 }
 .form>h1{ 
@@ -199,7 +199,7 @@
     margin-bottom: 3px;
 }
 .form>h2{
-color: var(--primary-blue-dark);
+color: var(--primary-blue-light);
 text-align: center;
 }
 .btn {

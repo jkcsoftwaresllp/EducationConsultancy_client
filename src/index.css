@@ -22,15 +22,15 @@
   --maximum-responsive-width: 2000px; /* Max container width for large screens */
 
   /* === Primary Theme Colors === ++++++ */
-  --primary-gray: #e2dedf; /* Main brand color (buttons, links) +++++++ */
+  --primary-gray: #f6f6f6; /* Main brand color (buttons, links) +++++++ */
   --primary-green: #868d0d; /* Hover background or soft accent ++++++++++ */
   --primary-orange: #f36b3b; /* Active/focus state of primary color +++++++ */
 
   /* ++++ */
   
-  --primary-blue-dark: #0B1D51; 
-  --primary-blue-medium: #725CAD; 
-  --primary-blue-light: #8CCDEB;
+  --primary-blue-dark: #537D5D; 
+  --primary-blue-medium: #73946B; 
+  --primary-blue-light: #9EBC8A;
 
   --background-blue-dark: #1f4363;
   --backgroun-black: black;
@@ -73,12 +73,12 @@
 
   /* === Button === ++++ */
   --button1-bg: rgb(255, 62, 62);
-  --button2-bg: #b2b60d;
+  --button2-bg: #73946B;
   --button3-bg: #f4364f;
   --button-text: #fff;
 
   --image-logo-bg: white ;
-  --form1-bg: #140c9375;
+  --form1-bg: #537D5D75;
 }
 
 [data-theme="dark"] {

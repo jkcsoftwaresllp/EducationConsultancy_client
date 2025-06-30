@@ -3,7 +3,7 @@
 }
 
 .LeftSection {
-    background-color: var(--background-blue-dark);
+    background-color: var(--primary-blue-dark);
     width: 50%;
     height: 700px;
     position: relative;
@@ -32,7 +32,7 @@
     box-shadow: 0px 12px 40px -5px rgb(2, 2, 2);
 }
 .LeftSection>h1 {
-    color: var(--disabled-text);
+    color: var(--primary-blue-light);
     margin-bottom: 0px;
     font-size: 25px;
     /* font-weight: ; */
