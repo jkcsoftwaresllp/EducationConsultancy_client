@@ -123,3 +123,10 @@
     font-weight: 400;
     background: transparent;
 }
+.inputBox>div>span{
+    /* margin-left: 5px; */
+    color: red;
+    /* position: absolute; */
+    /* left: 0;
+    bottom: 0; */
+}

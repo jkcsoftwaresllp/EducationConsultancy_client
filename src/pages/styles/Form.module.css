@@ -9,7 +9,7 @@
     left: 0;
     font-family: 'Open Sans', sans-serif;
     animation: fadeIn 0.3s ease-in;
-    z-index: 10;
+    z-index: 1111;
 }
 @keyframes Main {
   from { opacity: 0; transform: scale(0.95); }
@@ -93,7 +93,7 @@
 
 .form {
     margin: auto;
-    margin-top: 90px;
+    margin-top: 30px;
     width: 40%;
     background-color: rgb(255, 255, 255);
     padding: 50px 10px;
@@ -136,4 +136,7 @@ text-align: center;
     top: 10px;
     right: 15px;
     cursor: pointer;
+}
+.inputBox>div>span{
+    color: red;
 }

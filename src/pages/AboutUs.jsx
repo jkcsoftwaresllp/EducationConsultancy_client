@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/bg1.jpg'
+import image from '../assets/TittleContainerBG.jpg'
 import logo from '../assets/careerzone.png'
 import Header from '../components/courseDetails/Header'
 import styles from './styles/AboutUs.module.css'

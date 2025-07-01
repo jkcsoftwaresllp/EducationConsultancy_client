@@ -16,7 +16,7 @@ export const menuLinks = [
       ["Management Courses", "BBA", "BMS", "BBM", "BHMCT", "MHM"],
       ["LAW Courses", "B.A. LL.B.", "LL.B.", "LL.M.", "B.Sc. LL.B"],
     ],
-    offset: -620,
+    offset: -720,
   },
   {
     label: "ENGINEERING",
@@ -54,7 +54,7 @@ export const menuLinks = [
         "All Engineering Exams",
       ],
     ],
-    offset: -700,
+    offset: -800,
   },
   {
     label: "MEDICAL",
@@ -77,7 +77,7 @@ export const menuLinks = [
       ],
       ["College By City", "Noida", "Mumbai", "Bangalore", "Chennai", "Pune"],
     ],
-    offset: -800,
+    offset: -900,
   },
   {
     label: "MANAGEMENT",
@@ -101,7 +101,7 @@ export const menuLinks = [
       ],
       ["College By City", "Noida", "Mumbai", "Bangalore", "Chennai", "Pune"],
     ],
-    offset: -900,
+    offset: -1000,
   },
   { label: "LAW" },
   { label: "CONTACT US" },

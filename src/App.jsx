@@ -13,6 +13,9 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import EnquiryForm from "./pages/EnquiryForm";
 import Footer from "./components/footer/footer";
+import styles from './App.module.css'
+import Exam from "./pages/Exam";
+import Bams from "./components/coursesRoutes/Bams";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -31,8 +34,8 @@ function App() {
   };
   return (
     <>
-      <div>
-        <div>
+      <div className={styles.main} >
+        <div className={styles.navbar} >
           <TopBar
             address="511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001"
             phone="+91 93043 65563"
@@ -41,28 +44,30 @@ function App() {
           <Navbar
             onCourseClick={(value) => {
               const kebabValue = toKebabCase(value);
-              kebabValue === "home"
-                ? setCourseUrl(`/`)
-                : setCourseUrl(`/${kebabValue}`);
+              if (kebabValue === "courses" || kebabValue === "engineering" || kebabValue === "medical" || kebabValue === "management") {
+                setCourseUrl(courseUrl)
+              } else {
+                kebabValue === "home"
+                  ? setCourseUrl(`/`)
+                  : setCourseUrl(`/${kebabValue}`);
+              }
             }}
           />
         </div>
-        {/* <button>Register</button> */}
         <EnquiryForm />
-        <div>
+        <div className={styles.body}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/courses-be-btech" element={<BTech />} />
             <Route path="/courses-me-mtech" element={<MTech />} />
             <Route path="/courses-phd" element={<Phd />} />
-            <Route
-              path="/courses-diploma-courses"
-              element={<DiplomaCourses />}
-            />
+            <Route path="/courses-diploma-courses" element={<DiplomaCourses />} />
             <Route path="/courses-mbbs" element={<Mbbs />} />
             <Route path="/courses-md" element={<Md />} />
+            <Route path="/courses-bams" element={<Bams />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/exam" element={<Exam/>} />
           </Routes>
           <Footer />
         </div>
