@@ -19,40 +19,38 @@ function ContactUs() {
             <div className={styles.Header} >
                 <h1>Get in Touch</h1>
                 <h2>Have questions about THE CAREER ZONE ? Need help getting started? Our team is here to help you succeed. Reach out to us anytime.</h2>
-            </div>
-            <div className={styles.body} >
-                <div className={styles.leftSection} >
-                    <h1>Get in Touch</h1>
-                    <span></span>
-                    <h2>Multiple ways to reach us. Choose what works best for you.</h2>
-                    <div className={styles.CardContainer} >
-                        <div className={styles.card} >
-                            <h1>Experience</h1>
-                            <p>20+ Years in Education & Admission Guidance 5000+ Successful Admissions</p>
-                        </div>
-                        <div className={styles.card} >
-                            <h1>Address</h1>
-                            <p>Address:511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001</p>
-                        </div>
-                        <div className={styles.card} >
-                            <h1>Contact info</h1>
-                            <p>Phone: 93043 65563
-                                Email: info@thecareeezone.co.in</p>
-                        </div>
-                        <div className={styles.card} >
-                            <h1>Website</h1>
-                            <p>Website: www.thecareerzone .co.in Facebook: Facebook .com/thecareerzone .patna</p>
-                        </div>
+                <h2>Multiple ways to reach us. Choose what works best for you.</h2>
+                <span className={styles.underline}></span>
+                <div className={styles.CardContainer} >
+                    <div className={styles.card} >
+                        <span className={styles.underline}></span>
+                        <h1>Experience</h1>
+                        <p>20+ Years in Education & Admission Guidance 5000+ Successful Admissions</p>
+                    </div>
+                    <div className={styles.card} >
+                        <span className={styles.underline}></span>
+                        <h1>Address</h1>
+                        <p>Address:511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001</p>
+                    </div>
+                    <div className={styles.card} >
+                        <span className={styles.underline}></span>
+                        <h1>Contact info</h1>
+                        <p>Phone: 93043 65563
+                            Email: info@thecareeezone.co.in</p>
+                    </div>
+                    <div className={styles.card} >
+                        <span className={styles.underline}></span>
+                        <h1>Website</h1>
+                        <p>Website: www.thecareerzone .co.in Facebook: Facebook .com/thecareerzone .patna</p>
                     </div>
                 </div>
-                <div className={styles.rightSection} >
+            </div>
+            <div className={styles.body} >
+                <div className={styles.RightSection}>
                     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-                        {/* <div className={styles.cross} onClick={() => setShowForm(false)} ><img src={crossIcon} alt="" /></div> */}
-                        <h1>ENQUIRY FORM</h1>
-                        <h2>THE CAREER ZONE</h2>
                         <div className={styles.inputBox}>
                             {/* Name */}
-                            <div className={styles.nameDiv}>
+                            <div>
                                 <input className={styles.name}
                                     type="text"
                                     placeholder="Full Name"
@@ -61,7 +59,7 @@ function ContactUs() {
                                 {errors.name && <span>{errors.name.message}</span>}
                             </div>
                             {/* Phone Number */}
-                            <div className={styles.phoneDiv}>
+                            <div>
                                 <input className={styles.phone}
                                     type="tel"
                                     placeholder="Mobile Number"
@@ -77,7 +75,7 @@ function ContactUs() {
                             </div>
 
                             {/* Email */}
-                            <div className={styles.EmailDiv}>
+                            <div>
                                 <input className={styles.email}
                                     type="email"
                                     placeholder="Email Address"
@@ -93,19 +91,35 @@ function ContactUs() {
                             </div>
 
                             {/* Course */}
-                            <div className={styles.messageDiv}>
-                                <textarea
-                                    className={styles.message}
-                                    placeholder="Message"
+                            <div>
+                                <input className={styles.course}
+                                    type="text"
+                                    placeholder="Course"
                                     {...register('course', { required: 'Course is required' })}
                                 />
+                                {errors.course && <span>{errors.course.message}</span>}
                             </div>
-
+                            {/* Name */}
+                            <div>
+                                <input className={styles.name}
+                                    type="text"
+                                    placeholder="Education"
+                                    {...register('name')}
+                                />
+                            </div>
+                            {/* Name */}
+                            <div>
+                                <input className={styles.name}
+                                    type="text"
+                                    placeholder="Location"
+                                    {...register('name')}
+                                />
+                            </div>
 
                             {/* Register Button */}
                         </div>
                         <div className={styles.btnDiv} >
-                            <button className={styles.btn} type="submit">SEND ENQUIRY</button>
+                            <button className={styles.btn} type="submit">SUBMIT NOW</button>
                         </div>
                     </form>
                 </div>

@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./styles/CareerInfoTile.module.css";
-function CareerInfoTile({ headingColor, data }) {
-  // For Gray Heading :-  headingColor={1}
-
+function CareerInfoTile({ headingColor, data }) {  // For Gray Heading :-  headingColor={1}
+  
   return (
     <div className={styles.box}>
       {data.map(([title, description], index) => (

@@ -1,139 +1,142 @@
 .Main {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background-color: rgba(132, 132, 132, 0.1);
-    width: 100vw;
-    height: 100vw;
-    position: fixed;
-    top: 0;   
-    left: 0;
-    font-family: 'Open Sans', sans-serif;
-    animation: fadeIn 0.3s ease-in;
-    z-index: 10;
-}
-@keyframes Main {
-  from { opacity: 0; transform: scale(0.95); }
-  to   { opacity: 1; transform: scale(1); }
-}
-/* .close{
-    display: none;
-} */
-/*  */
-
-
-.inputBox>div>input {
-    background-color: white;
-    color: black;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    outline: none;
-    height: 2.5rem;
-    padding-left: 15px;
-    box-sizing: content-box;
-    font-size: 12px;
-}
-.inputBox>div>input:focus , .inputBox>div>textarea:focus {
-    border: 1px solid rgb(74, 173, 254);
-}
-
-.inputBox>div>textarea {
-    background-color: white;
-    color: black;
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    outline: none;
-    height: 80px;
-    padding: 20px;
-    box-shadow: none;
-    box-sizing: content-box;
-    font-size: 12px;
-}
-
-.inputBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-.nameDiv {
-    width: 200px;
-    margin-right: 50px;
-    margin-top: 40px;
-    padding-right: 10px;
-
-}
-
-.phoneDiv {
-    width: 200px;
-    margin-top: 40px;
-    padding-right: 10px;
-
-}
-
-.EmailDiv {
-    width: 460px;;
-    margin-top: 40px;
-    padding-right: 10px;
-}
-.messageDiv{
-    width: 440px;;
-    margin-top: 40px;
-    padding-right: 10px;
-    margin-left: -20px;
-
-}
-
-.inputBox>div>input::placeholder {
-    color: rgb(103, 102, 102);
+  position: fixed;
+  inset: 0;
+  z-index: 1111;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
     margin: auto;
-    margin-top: 90px;
-    width: 40%;
-    background-color: rgb(255, 255, 255);
-    padding: 50px 10px;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    margin-top: 30px;
+}
 
+.form > h1 {
+  font-size: 32px;
+  color: #e66030;
+  text-align: center;
+  margin-bottom: 6px;
 }
-.form>h1{ 
-    font-size: 48px;
-    color: #e66030;
-    text-align: center;
-    margin-bottom: 3px;
+
+.form > h2 {
+  color: #55b2ff;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-.form>h2{
-color: rgb(85, 178, 255);
-text-align: center;
+
+.cross {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  cursor: pointer;
 }
+
+.cross img {
+  width: 20px;
+  height: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.inputBox > div {
+  width: 100%;
+  position: relative;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.inputBox input:focus,
+.inputBox textarea:focus {
+  border-color: #4aadfe;
+}
+
+.inputBox textarea {
+  height: 100px;
+  resize: none;
+}
+
+.inputBox span {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 .btn {
-    text-align: center !important;
-    padding: 0.8rem !important;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    background: #f4364f;
-    color: #fff;
-    padding: 2px 10px;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
-    width: 70%;
-    outline: none;
+  background-color: #f4364f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.btnDiv{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+
+.btn:hover {
+  background-color: #d32f2f;
 }
-.cross{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .form {
+    padding: 25px 18px;
+  }
+
+  .form > h1 {
+    font-size: 26px;
+  }
+
+  .form > h2 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  .cross img {
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -5,6 +5,23 @@ import { menuLinks } from "./styles/helper/menuLink";
 
 function Navbar({ onCourseClick }) {
   const [open, setOpen] = useState(false);
+  const [expandedDropdown, setExpandedDropdown] = useState(null);
+  const [expandedSubGroup, setExpandedSubGroup] = useState(null);
+
+  const toggleDropdown = (label) => {
+    setExpandedDropdown(expandedDropdown === label ? null : label);
+    setExpandedSubGroup(null);
+  };
+
+  const toggleSubGroup = (title) => {
+    setExpandedSubGroup(expandedSubGroup === title ? null : title);
+  };
+
+  const closeSidebar = () => {
+    setOpen(false);
+    setExpandedDropdown(null);
+    setExpandedSubGroup(null);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -16,16 +33,13 @@ function Navbar({ onCourseClick }) {
 
       <div className={styles.links}>
         {menuLinks.map(({ label, boxes, offset }, index) => (
-
-
           <div key={label} className={styles.linkWrapper}>
             <a
               className={styles[`link${index}`]}
               onClick={(e) => {
-                e.preventDefault(); // prevents # navigation
-                onCourseClick(label); // this will trigger navigate via App
+                e.preventDefault();
+                onCourseClick(label);
               }}
-              // href={label === "ABOUT US" ? `/${label.toLowerCase().replace(/\s+/g, '-')}` : "/"  }
               href="#"
             >
               {label}
@@ -46,10 +60,48 @@ function Navbar({ onCourseClick }) {
 
       {open && (
         <div className={styles.sidebar}>
-          {menuLinks.map(({ label }) => (
-            <a href="#" key={label}>
-              {label}
-            </a>
+          <div className={styles.closeBtn} onClick={closeSidebar}>✖</div>
+          {menuLinks.map(({ label, boxes }) => (
+            <div key={label} className={styles.sidebarItem}>
+              <div
+                className={styles.sidebarMainLink}
+                onClick={() => (boxes ? toggleDropdown(label) : (onCourseClick(label), closeSidebar()))}
+              >
+                {label} {boxes && <span className={styles.caret}>▾</span>}
+              </div>
+              {boxes && expandedDropdown === label && (
+                <div className={styles.dropdownBox}>
+                  {boxes.map((group, index) => {
+                    const [title, ...items] = group;
+                    return (
+                      <div key={index}>
+                        <div
+                          className={styles.dropdownTitle}
+                          onClick={() => toggleSubGroup(title)}
+                        >
+                          {title} <span className={styles.caret}>▾</span>
+                        </div>
+                        {expandedSubGroup === title && (
+                          <ul className={styles.dropdownList}>
+                            {items.map((item, i) => (
+                              <li
+                                key={i}
+                                onClick={() => {
+                                  onCourseClick(`${label}/${item}`);
+                                  closeSidebar();
+                                }}
+                              >
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       )}

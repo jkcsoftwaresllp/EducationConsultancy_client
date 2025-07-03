@@ -72,7 +72,7 @@ function EnquiryForm({ onClose }) {
                             <textarea
                                 className={styles.message}
                                 placeholder="Message"
-                                {...register('course', { required: 'Course is required' })}
+                                {...register('message', { required: 'message is required' })}
                             />
                         </div>
 

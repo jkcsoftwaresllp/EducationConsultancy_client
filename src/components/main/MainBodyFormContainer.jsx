@@ -20,8 +20,8 @@ function MainBodyFormContainer() {
         <div>
             <div className={styles.Contaner} >
                 <div className={styles.LeftSection}>
-                    <h1>Admission Expert: Your Gateway to Success - The Best Admission Consultancy in Patna, Guiding Students Nationwide for a Bright Future.</h1>
-                    <h2>097080 44044</h2>
+                    <h1>THE CAREER ZONE: Your Gateway to Success - The Best Admission Consultancy in Patna, Guiding Students Nationwide for a Bright Future.</h1>
+                    <h2>093043 65563</h2>
                     <div className={styles.icon} >&gt;</div>
                 </div>
                 <div className={styles.RightSection}>
