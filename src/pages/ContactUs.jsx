@@ -46,30 +46,6 @@ function ContactUs() {
                 </div>
             </div>
             <div className={styles.body} >
-                {/* <div className={styles.leftSection} >
-                    <h1>Get in Touch</h1>
-                    <span></span>
-                    <h2>Multiple ways to reach us. Choose what works best for you.</h2>
-                    <div className={styles.CardContainer} >
-                        <div className={styles.card} >
-                            <h1>Experience</h1>
-                            <p>20+ Years in Education & Admission Guidance 5000+ Successful Admissions</p>
-                        </div>
-                        <div className={styles.card} >
-                            <h1>Address</h1>
-                            <p>Address:511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001</p>
-                        </div>
-                        <div className={styles.card} >
-                            <h1>Contact info</h1>
-                            <p>Phone: 93043 65563
-                                Email: info@thecareeezone.co.in</p>
-                        </div>
-                        <div className={styles.card} >
-                            <h1>Website</h1>
-                            <p>Website: www.thecareerzone .co.in Facebook: Facebook .com/thecareerzone .patna</p>
-                        </div>
-                    </div>
-                </div> */}
                 <div className={styles.RightSection}>
                     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                         <div className={styles.inputBox}>

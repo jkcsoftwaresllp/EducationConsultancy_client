@@ -92,9 +92,6 @@
 .card:hover .underline{
     width: 95%;
 }
-/* .CardContainer:hover .underline{
-    width: 500px;
-} */
 .card>h1{
     font-size: 25px;
     font-weight: 700;
@@ -117,8 +114,6 @@
     margin-bottom: 50px;
     gap: 70px;
 }
-/*  */
-/*  */
 .RightSection {
     background: url('../../assets/formBG.png');
     margin-top: 50px;
@@ -127,38 +122,6 @@
     border-radius: 5px;
 
 }
-/* .icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--primary-orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    position: absolute;
-    top: 200px;
-    right: -25px;
-    font-size: large;
-    font-weight: bolder;
-    box-shadow: 0px 12px 40px -5px rgb(2, 2, 2);
-}
-.LeftSection>h1 {
-    color: var(--primary-blue-light);
-    margin-bottom: 0px;
-    font-size: 25px;
-    /* font-weight: ; */
-    /* line-height: 28px;
-    font-style: normal;
-    padding-top: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: left;
-    width: 500px;
-    margin-left: 250px;
-    padding-top: 100px; */
-
-
-
 
 
 .inputBox>div>input {
@@ -214,3 +177,101 @@
 }
 
 
+@media (max-width: 1024px) {
+  .Header>h2 {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .CardContainer {
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .card>p {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .btn {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .form {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    margin: 10px 20px;
+  }
+
+  .Header>h1 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .Header>h2 {
+    font-size: 16px;
+  }
+
+  .body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .RightSection {
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .inputBox>div>input {
+    width: 95%;
+  }
+
+  .btn {
+    width: 95%;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header>h1 {
+    font-size: 1.8rem;
+  }
+
+  .Header>h2 {
+    font-size: 14px;
+  }
+
+  .card>h1 {
+    font-size: 20px;
+  }
+
+  .card>p {
+    font-size: 14px;
+  }
+
+  .inputBox>div>input {
+    font-size: 14px;
+    height: 2.2rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

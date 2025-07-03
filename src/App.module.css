@@ -8,8 +8,11 @@
     top: 0;
     z-index: 1111;
 }
-.body{
-    /* height: 87vh; */
-  /* scrollbar-width: none;
-  -ms-overflow-style: none;  */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar{
+    height: auto;
+  }
 }

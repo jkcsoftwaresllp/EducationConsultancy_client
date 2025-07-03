@@ -21,7 +21,7 @@ function FormContainer({ navigateLink }) {
         <div>
             <div className={styles.container} >
                 <div className={styles.containerBox} >
-                    <div>
+                    <div className={styles.Left00} >
                         <div className={styles.leftContainerUpper} >
                             <div className={styles.detailsBox} >
                                 <div className={styles.detailsBoxLeft} ><img src={collegeIcon} alt="" /></div>

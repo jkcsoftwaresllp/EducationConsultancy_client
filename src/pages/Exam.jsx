@@ -9,7 +9,7 @@ function Exam() {
     return (
         <div>
             <Header tittle={"Popular Exam"} subTittle={"Entrance Exams In India -EXAMS 2025-2026 , DATES, APPLICATION FORM & ALERTS"} BGimage={image} />
-            <ContainerBody tittleWithWhite={"Entrance Exams"} tittleWithColor={" In India"} >
+            <ContainerBody background={1} tittleWithWhite={"Entrance Exams"} tittleWithColor={" In India"} >
                 {tile3Data1.map((tile3Data, index) => (
                     <Tile3 tittle={tile3Data.tittle} buttons={tile3Data.buttons} key={index} />
                 ))}
