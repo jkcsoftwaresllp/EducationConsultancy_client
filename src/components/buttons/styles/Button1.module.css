@@ -1,10 +1,8 @@
 .Box {
     font-family: 'Open Sans', sans-serif;
-    /* width: 190px; */
 }
 
 .Box>button {
-    /* background-color: rgb(255, 62, 62); */
     font-size: 12px;
     font-weight: 700;
     padding: 7px 18px;
@@ -16,4 +14,13 @@
     color: var(--text-light);
     min-width: 110px;
     white-space: nowrap;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Box>button{
+    padding: 7px 18px;
+    border-radius: 3px;
+    min-width: 110px;
+    white-space: nowrap;
+  }
 }

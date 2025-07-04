@@ -16,6 +16,8 @@ import Footer from "./components/footer/footer";
 import styles from './App.module.css'
 import Exam from "./pages/Exam";
 import Bams from "./components/coursesRoutes/Bams";
+import Bds from "./components/coursesRoutes/Bds";
+import Ms from "./components/coursesRoutes/Ms";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -67,6 +69,8 @@ function App() {
             <Route path="/courses-bams" element={<Bams />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/courses-bds" element={<Bds/>} />
+            <Route path="/courses-ms" element={<Ms/>} />
             <Route path="/exam" element={<Exam/>} />
           </Routes>
           <Footer />
