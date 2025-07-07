@@ -94,15 +94,6 @@ function Ms() {
         ["Pay the application fee: ","The application fee will have to be paid along with the application form. The application fee varies from college to college."],
         ["Submit the application form: ","The application form along with the required documents will have to be submitted to the college. The last date for submission of the application form is usually mentioned in the application form."],
     ];
-    //  const data = [
-    //     [
-    // ];
-    //  const data = [
-    //     [
-    // ];
-    //  const data = [
-    //     [
-    // ];
     return (
         <div>
             <Header tittle={"Doctorate Of Medicine In Neurology(DM In Neurology)"} subTittle={"Elegliblity | Course Fee | Course Duration | Entrance Exams"} BGimage={image} />

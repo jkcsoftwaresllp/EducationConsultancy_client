@@ -35,7 +35,7 @@
 
 .cell {
   padding: 5px 10px;
-  flex: 1;
+  /* flex: 1; */
   word-wrap: break-word;
 }
 

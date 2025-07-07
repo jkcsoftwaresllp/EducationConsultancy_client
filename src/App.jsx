@@ -18,6 +18,13 @@ import Exam from "./pages/Exam";
 import Bams from "./components/coursesRoutes/Bams";
 import Bds from "./components/coursesRoutes/Bds";
 import Ms from "./components/coursesRoutes/Ms";
+import Bba from "./components/coursesRoutes/Bba";
+import Bms from "./components/coursesRoutes/Bms";
+import Bbm from "./components/coursesRoutes/Bbm";
+import Bhmct from "./components/coursesRoutes/Bhmct";
+import Mhm from "./components/coursesRoutes/Mhm";
+import Ballb from "./components/coursesRoutes/ballb";
+import Llb from "./components/coursesRoutes/Llb";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -71,6 +78,13 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/courses-bds" element={<Bds/>} />
             <Route path="/courses-ms" element={<Ms/>} />
+            <Route path="/courses-bba" element={<Bba/>} />
+            <Route path="/courses-bms" element={<Bms/>} />
+            <Route path="/courses-bbm" element={<Bbm/>} />
+            <Route path="/courses-bhmct" element={<Bhmct />} />
+            <Route path="/courses-mhm" element={<Mhm/>} />
+            <Route path="/courses-ba-llb" element={<Ballb/>} />
+            <Route path="/courses-llb" element={<Llb />} />
             <Route path="/exam" element={<Exam/>} />
           </Routes>
           <Footer />
