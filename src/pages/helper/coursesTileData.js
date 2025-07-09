@@ -36,7 +36,7 @@ export const coursesTileData = [
         courses: "Bachelor Of Technology (B.Tech) | Diploma In Computer Engineering | Diploma In Civil Engineering",
     },
     {
-        image: image5,
+        image: image7,
         title: "Law",
         college: 2,
         courses: "Bachelor Of Legislative Law (LLB) | Master Of Business Law(M.B.L)",
@@ -48,7 +48,7 @@ export const coursesTileData = [
         courses: "Bachelor Of Hospitality Management (BHM) | Bachelor Of Management Studies(BMS) | Diploma In Digital Marketing(DGM)",
     },
     {
-        image: image7,
+        image: image3,
         title: "Mass Communication",
         college: 14,
         courses: "Bachelor Of Journalism & Mass Communication (BJMC) | Diploma In Development Journalism | Diploma In Journalism And Mass Communication",
@@ -79,7 +79,7 @@ export const coursesTileData = [
     },{
         image: image8,
         title: "Vocational",
-        college: 0,
+        college: 1,
         courses: "",
     },
 ];

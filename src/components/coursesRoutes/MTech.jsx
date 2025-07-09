@@ -228,9 +228,6 @@ export function MTech() {
         ["Counselling & Seat Allocation - ", "Qualified Candidates Are Required To Participate In The Counselling Process. On The Basis Of Merit, Availability Of Seats, And Preferred Choices, The Authorities Offer Admission Into The M.Tech Programme By Allotting The Seats."]
     ]
 
-    // const data16 = [
-    //     ["", ""],
-    // ]
     const data20 = [
         ["GATE ", "Is One Of The Most Important Entrance Examinations For Admission Into The M.Tech Programme. This Is A Joint Examination Held By Indian Institute Of Science And Seven Indian Institute Of Technologies (Roorkee, Delhi, Guwahati, Kanpur, Kharagpur, Chennai (Madras) And Mumbai(Bombay). It Is Conducted In A Computer-Based Mode For The Duration Of 3 Hours."],
         ["TANCET ", "Or Tamil Nadu Common Entrance Test Is A State Level Entrance Examination Conducted By The Anna University For Admission Into The Postgraduate Engineering Programme In The Participating Institutes Of The State. The Authorities Conduct The Exam And Release The Cutoff To Offer Admission. The Exam Is Conducted In Offline Mode Having Three Parts - I, II And III Wherein Part I & II Was Compulsory For All While Part III Was Based On The Discipline Selected By The Candidates"],

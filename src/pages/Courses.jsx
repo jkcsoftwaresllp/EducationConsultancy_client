@@ -19,6 +19,7 @@ function Courses() {
                         tittle={tile.title}
                         college={tile.college}
                         courses={tile.courses}
+                        heigth={1}
                     />
                 ))}
             </ContainerBody>

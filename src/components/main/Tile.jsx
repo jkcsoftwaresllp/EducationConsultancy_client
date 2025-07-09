@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './styles/tiles.module.css'
-import firstimg from '../../assets/first-img.jpg'
 import Button1 from '../buttons/Button1'
 
-function Tile({ tittle, college, courses, image, buttonLabel, buttonColor, width, border, paras, onclick }) { // width ---> "lg for Large"
+function Tile({ tittle, college, courses, image, buttonLabel, buttonColor, width, heigth, border, paras, onclick }) { // width ---> "lg for Large" AND heigth ---> heigth={1} fot Large || Otherwise default are allready Set 
     return (
         <div className={styles.container} style={{
             ...(width ? { width: "830px" } : {}),
@@ -28,7 +27,8 @@ function Tile({ tittle, college, courses, image, buttonLabel, buttonColor, width
                         </div>
                     ))}
 
-                    <h4>{courses}</h4>
+                    <h4 style={(heigth ? { height: "80px" } : {})}
+                    >{courses}</h4>
                 </div>
                 <Button1 color={buttonColor ? buttonColor : "red"} text={buttonLabel ? buttonLabel : "APPLY NOW"} />
                 {/* <button onClick={onclick} className={styles.btn} >APPLY HERE</button> */}

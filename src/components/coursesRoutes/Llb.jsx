@@ -500,16 +500,6 @@ function Llb() {
             
 
 
-
-
-            {/*             
-            <ParaTiles heading={""} para={""} headingSize={"15px"} />
-            <ParaTiles  para={""} headingSize={"15px"} />
-            <ParaTiles heading={""} para={""} headingSize={"15px"} />
-            <Table LeftcellWidth={'48%'} RightcellWidth={'48%'} tableData={data} />
-             */}
-
-
         </div>
     )
 }
