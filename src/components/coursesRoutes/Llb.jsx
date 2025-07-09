@@ -451,9 +451,7 @@ function Llb() {
         ["6. Study Legal Aptitude And Prepare Your Notes:- ","For A Candidate Appearing For Law Entrance Test, Clarity In The Section Of Legal Aptitude Is A Matter Of Primary Concern. Candidates Have To Study Variety Of Topics In This Section Such As Contract, Torts, IPC, IPR, Family Law. The Number Of Questions In Each Area Varies But A Clear Understanding Of The Basic Concepts In Each Of These Topics Shall Prove To Be Really Helpful And A Score Fetcher. Reading And Understanding Examples And Making One’s Own Notes Will Help Bring More Clarity."],
         ["Why Choose LLB (Bachelor of Legislative Law)?","LLB (Bachelor of Legislative Law) courses provide a solid foundation to empower students to combine their law studies with business or accounting, as well as to combine law and non-legal degrees. Law graduates can join various fields such as media and law, academics, commerce and industry, social work, politics. The LLB course provides the knowledge and skills acquired in the study of law to enable students to analyse both sides of complex situations and to make effective solutions based on solid reasoning and critical thinking."]
     ];
-    //  const data = [
-    //     [
-    // ];
+    
     return (
         <div>
             <Header tittle={"Bachelor Of Legislative Law (LLB)"} subTittle={"Elegliblity | Course Fee | Course Duration | Entrance Exams"} BGimage={image} />

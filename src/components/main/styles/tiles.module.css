@@ -31,6 +31,12 @@
 
 .tittles > h1 {
   font-size: 20px;
+  width: 680px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 610px; 
+  display: block;
 }
 
 .tittles > h2 {
@@ -46,6 +52,15 @@
 /* Courses */
 .courses {
   width: 380px;
+}
+
+.courses>div>p{
+  width: 680px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 680px; 
+  display: block;
 }
 
 .courses > h4 {

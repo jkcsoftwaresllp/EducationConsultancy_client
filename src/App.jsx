@@ -25,6 +25,8 @@ import Bhmct from "./components/coursesRoutes/Bhmct";
 import Mhm from "./components/coursesRoutes/Mhm";
 import Ballb from "./components/coursesRoutes/ballb";
 import Llb from "./components/coursesRoutes/Llb";
+import Courses from "./pages/Courses";
+import EngineeringColleges from "./pages/EngineeringColleges";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -55,6 +57,8 @@ function App() {
               const kebabValue = toKebabCase(value);
               if (kebabValue === "courses" || kebabValue === "engineering" || kebabValue === "medical" || kebabValue === "management") {
                 setCourseUrl(courseUrl)
+                // } if else (kebabValue === "courses-llm" || kebabValue === "courses-bsc-llb") {
+                //   setCourseUrl("course")
               } else {
                 kebabValue === "home"
                   ? setCourseUrl(`/`)
@@ -76,16 +80,19 @@ function App() {
             <Route path="/courses-bams" element={<Bams />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact-us" element={<ContactUs />} />
-            <Route path="/courses-bds" element={<Bds/>} />
-            <Route path="/courses-ms" element={<Ms/>} />
-            <Route path="/courses-bba" element={<Bba/>} />
-            <Route path="/courses-bms" element={<Bms/>} />
-            <Route path="/courses-bbm" element={<Bbm/>} />
+            <Route path="/courses-bds" element={<Bds />} />
+            <Route path="/courses-ms" element={<Ms />} />
+            <Route path="/courses-bba" element={<Bba />} />
+            <Route path="/courses-bms" element={<Bms />} />
+            <Route path="/courses-bbm" element={<Bbm />} />
             <Route path="/courses-bhmct" element={<Bhmct />} />
-            <Route path="/courses-mhm" element={<Mhm/>} />
-            <Route path="/courses-ba-llb" element={<Ballb/>} />
+            <Route path="/courses-mhm" element={<Mhm />} />
+            <Route path="/courses-ba-llb" element={<Ballb />} />
             <Route path="/courses-llb" element={<Llb />} />
-            <Route path="/exam" element={<Exam/>} />
+            <Route path="/courses-llm" element={<Courses />} />
+            <Route path="/courses-bsc-llb" element={<Courses />} />
+            <Route path="/engineering-top-engineering-colleges" element={<EngineeringColleges/>} />
+            <Route path="/exam" element={<Exam />} />
           </Routes>
           <Footer />
         </div>
