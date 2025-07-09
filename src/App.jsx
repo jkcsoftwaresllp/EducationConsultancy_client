@@ -30,22 +30,10 @@ import EngineeringColleges from "./pages/EngineeringColleges";
 import NeetExam from "./components/coursesRoutes/NeetExam";
 import ComedkExam from "./components/coursesRoutes/ComedkExam";
 import JeeMain from "./components/coursesRoutes/JeeMain";
+import './App.css'
 
 function App() {
-  const [courseUrl, setCourseUrl] = useState("");
-  console.log(courseUrl);
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate(courseUrl);
-  }, [courseUrl]);
 
-  const toKebabCase = (str) => {
-    return str
-      .toLowerCase()
-      .replace(/\./g, "") // remove all dots
-      .replace(/[\/\s]+/g, "-") // replace slashes and spaces with hyphen
-      .replace(/^-+|-+$/g, ""); // remove leading/trailing hyphens
-  };
   return (
     <>
       <div className={styles.main} >
@@ -118,4 +106,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
