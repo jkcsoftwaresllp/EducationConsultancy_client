@@ -61,7 +61,8 @@ export const menuLinks = [
     boxes: [
       [
         "Top Rank Colleges",
-        "IFIM Business School",
+        "Top MBBS Colleges in India",
+        "Top Dental Colleges in India",
         "Top Pharmacy Colleges in India",
         "Top BAMS Colleges in India",
         "Top BHMS Colleges in India",

@@ -37,16 +37,6 @@ function JeeMain() {
             <ParaTiles heading={"JEE Main 2022 Preparation Tips"} para={"Class 12 students are faced with the difficulty of preparing for the JEE Main 2022 examination and their board exams simultaneously. However, it may appear challenging at first, b"} headingSize={"25px"} />
             <ParaTiles heading={"How to fill JEE Main 2022 Application Form? - "} para={"NTA had reopened the JEE Main 2022 application form for session 2 in online mode twice. The first reopening was from July 6 to 9, while the second reopening was from July 11 to 12. Earlier,"} headingSize={"15px"} />
             
-
-
-
-            {/*             
-            <ParaTiles heading={""} para={""} headingSize={"15px"} />
-            <ParaTiles  para={""} headingSize={"15px"} />
-            <ParaTiles heading={""} para={""} headingSize={"15px"} />
-            <Table LeftcellWidth={'48%'} RightcellWidth={'48%'} tableData={data} />
-             */}
-
         </div>
     )
 }

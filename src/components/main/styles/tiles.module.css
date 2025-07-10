@@ -63,6 +63,28 @@
   display: block;
 }
 
+.address{
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-light) ;
+}
+.coursesP{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-light) ;
+
+}
+.subCourses{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-light) ;
+}
+.approvel{
+  font-size: 16px;
+  font-weight: 700;
+  /* color: var(--gray-light) ; */
+}
+
 .courses > h4 {
   font-weight: 300;
   margin-bottom: 30px;

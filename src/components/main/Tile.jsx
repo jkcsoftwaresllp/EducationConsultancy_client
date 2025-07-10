@@ -2,13 +2,13 @@ import React from 'react'
 import styles from './styles/tiles.module.css'
 import Button1 from '../buttons/Button1'
 
-function Tile({ tittle, college, courses, image, buttonLabel, buttonColor, width, heigth, border, paras, onclick }) { // width ---> "lg for Large" AND heigth ---> heigth={1} fot Large || Otherwise default are allready Set 
+function Tile({ tittle, college, courses, image, buttonLabel, buttonColor, width, heigth, border, paras, imageRounded , onclick }) { // width ---> "lg for Large" AND heigth ---> heigth={1} for Large , imageRounded={1} for Rounded Logo || Otherwise default are allready Set 
     return (
         <div className={styles.container} style={{
             ...(width ? { width: "830px" } : {}),
             ...(border ? { border: "2px solid gray" } : {})
         }}>
-            <div><img src={image} alt="" /></div>
+            <div><img style={(imageRounded ? { borderRadius: "50%" } : {})} src={image} alt="" /></div>
             <div>
                 <div className={styles.tittles} >
                     <h1>{tittle}</h1>
@@ -20,10 +20,10 @@ function Tile({ tittle, college, courses, image, buttonLabel, buttonColor, width
                 >
                     {paras?.map((para, index) => (
                         <div key={index}>
-                            <p>{para.p1}</p>
-                            <p>{para.p2}</p>
-                            <p>{para.p3}</p>
-                            <p>{para.p4}</p>
+                            <p className={styles.address} >{para.p1}</p>
+                            <p className={styles.coursesP} >{para.p2}</p>
+                            <p className={styles.subCourses} >{para.p3}</p>
+                            <p className={styles.approvel} >{para.p4}</p>
                         </div>
                     ))}
 
