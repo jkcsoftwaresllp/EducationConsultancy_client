@@ -37,6 +37,8 @@ import MedicalBanglore from "./pages/MedicalBanglore";
 import MedicalChennai from "./pages/MedicalChennai";
 import MedicalPune from "./pages/MedicalPune";
 import MedicalNoida from "./pages/MedicalNoida";
+import ManagementCollege from "./pages/ManagementCollege";
+import Law from "./pages/Law";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -119,11 +121,11 @@ function App() {
             <Route path="/engineering-upsee" element={<Courses />} />
             <Route path="/engineering-all-engineering-exams" element={<Exam />} />
             {/* ------ Medical ------------- */}
-            <Route path="/medical-top-mbbs-colleges-in-india" element={<MedicalColleges/>} />
-            <Route path="/medical-top-dental-colleges-in-india" element={<MedicalColleges/>} />
-            <Route path="/medical-top-pharmacy-colleges-in-india" element={<MedicalColleges/>} />
-            <Route path="/medical-top-bams-colleges-in-india" element={<MedicalColleges/>} />
-            <Route path="/medical-top-bhms-colleges-in-india" element={<MedicalColleges/>} />
+            <Route path="/medical-top-mbbs-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-dental-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-pharmacy-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-bams-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-bhms-colleges-in-india" element={<MedicalColleges />} />
             <Route path="/medical-mbbs" element={<Mbbs />} />
             <Route path="/medical-md" element={<Md />} />
             <Route path="/medical-ms" element={<Ms />} />
@@ -139,6 +141,32 @@ function App() {
             <Route path="/medical-bangalore" element={<MedicalBanglore />} />
             <Route path="/medical-chennai" element={<MedicalChennai />} />
             <Route path="/medical-pune" element={<MedicalPune />} />
+            {/* ------ Management ------------- */}
+            <Route path="/management-ifim-business-school" element={<ManagementCollege />} />
+            <Route path="/management-iim,-ahmedabad-(iima)" element={<ManagementCollege />} />
+            <Route path="/management-indian-school-of-business-(isb)" element={<ManagementCollege />} />
+            <Route path="/management-indian-institute-of-management-bangalore-(iimb)" element={<ManagementCollege />} />
+            <Route path="/management-indian-institute-of-management,-udaipur-(iimu)" element={<ManagementCollege />} />
+            <Route path="/management-bba" element={<Bba />} />
+            <Route path="/management-mba" element={<Bba />} />
+            <Route path="/management-bms" element={<Bms />} />
+            <Route path="/management-bhmct" element={<Bhmct />} />
+            <Route path="/management-mhm" element={<Mhm />} />
+            <Route path="/management-emba" element={<Bhmct />} />
+            <Route path="/management-neet-ug" element={<Exam />} />
+            <Route path="/management-neet-pg" element={<NeetPg />} />
+            <Route path="/management-aiims-pg" element={<Exam />} />
+            <Route path="/management-jipmer-pg" element={<Exam />} />
+            <Route path="/management-pgimer-exam" element={<Exam />} />
+            <Route path="/management-noida" element={<ManagementCollege />} />
+            <Route path="/management-mumbai" element={<ManagementCollege />} />
+            <Route path="/management-bangalore" element={<ManagementCollege />} />
+            <Route path="/management-chennai" element={<ManagementCollege />} />
+            <Route path="/management-pune" element={<ManagementCollege />} />
+            <Route path="/courses-mds" element={<ManagementCollege />} />
+            {/* ------ Law ------------- */}
+            <Route path="/law" element={<Law />} />
+            {/* ------ Exam ------------- */}
             <Route path="/exam" element={<Exam />} />
           </Routes>
           <Footer />
