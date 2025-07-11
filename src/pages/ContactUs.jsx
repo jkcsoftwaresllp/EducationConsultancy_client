@@ -47,6 +47,7 @@ function ContactUs() {
             </div>
             <div className={styles.body} >
                 <div className={styles.RightSection}>
+                    <h1>Contact Us</h1>
                     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                         <div className={styles.inputBox}>
                             {/* Name */}

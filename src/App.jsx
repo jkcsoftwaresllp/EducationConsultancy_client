@@ -30,6 +30,15 @@ import EngineeringColleges from "./pages/EngineeringColleges";
 import NeetExam from "./components/coursesRoutes/NeetExam";
 import ComedkExam from "./components/coursesRoutes/ComedkExam";
 import JeeMain from "./components/coursesRoutes/JeeMain";
+import MedicalColleges from "./pages/MedicalColleges";
+import NeetPg from "./components/coursesRoutes/NeetPg";
+import MedicalMumbai from "./pages/MedicalMumbai";
+import MedicalBanglore from "./pages/MedicalBanglore";
+import MedicalChennai from "./pages/MedicalChennai";
+import MedicalPune from "./pages/MedicalPune";
+import MedicalNoida from "./pages/MedicalNoida";
+import ManagementCollege from "./pages/ManagementCollege";
+import Law from "./pages/Law";
 
 function App() {
   const [courseUrl, setCourseUrl] = useState("");
@@ -74,6 +83,7 @@ function App() {
         <div className={styles.body}>
           <Routes>
             <Route path="/" element={<Home />} />
+            {/* ------ Courses ------------- */}
             <Route path="/courses-be-btech" element={<BTech />} />
             <Route path="/courses-me-mtech" element={<MTech />} />
             <Route path="/courses-phd" element={<Phd />} />
@@ -94,6 +104,7 @@ function App() {
             <Route path="/courses-llb" element={<Llb />} />
             <Route path="/courses-llm" element={<Courses />} />
             <Route path="/courses-bsc-llb" element={<Courses />} />
+            {/* ------ Engineering ------------- */}
             <Route path="/engineering-be-btech" element={<BTech />} />
             <Route path="/engineering-me-mtech" element={<MTech />} />
             <Route path="/engineering-phd" element={<Phd />} />
@@ -109,6 +120,53 @@ function App() {
             <Route path="/engineering-jee-main" element={<JeeMain />} />
             <Route path="/engineering-upsee" element={<Courses />} />
             <Route path="/engineering-all-engineering-exams" element={<Exam />} />
+            {/* ------ Medical ------------- */}
+            <Route path="/medical-top-mbbs-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-dental-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-pharmacy-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-bams-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-top-bhms-colleges-in-india" element={<MedicalColleges />} />
+            <Route path="/medical-mbbs" element={<Mbbs />} />
+            <Route path="/medical-md" element={<Md />} />
+            <Route path="/medical-ms" element={<Ms />} />
+            <Route path="/medical-bams" element={<Bams />} />
+            <Route path="/medical-bds" element={<Bds />} />
+            <Route path="/medical-neet-ug" element={<Exam />} />
+            <Route path="/medical-neet-pg" element={<NeetPg />} />
+            <Route path="/medical-aiims-pg" element={<Exam />} />
+            <Route path="/medical-jipmer-pg" element={<Exam />} />
+            <Route path="/medical-pgimer-exam" element={<Exam />} />
+            <Route path="/medical-noida" element={<MedicalNoida />} />
+            <Route path="/medical-mumbai" element={<MedicalMumbai />} />
+            <Route path="/medical-bangalore" element={<MedicalBanglore />} />
+            <Route path="/medical-chennai" element={<MedicalChennai />} />
+            <Route path="/medical-pune" element={<MedicalPune />} />
+            {/* ------ Management ------------- */}
+            <Route path="/management-ifim-business-school" element={<ManagementCollege />} />
+            <Route path="/management-iim,-ahmedabad-(iima)" element={<ManagementCollege />} />
+            <Route path="/management-indian-school-of-business-(isb)" element={<ManagementCollege />} />
+            <Route path="/management-indian-institute-of-management-bangalore-(iimb)" element={<ManagementCollege />} />
+            <Route path="/management-indian-institute-of-management,-udaipur-(iimu)" element={<ManagementCollege />} />
+            <Route path="/management-bba" element={<Bba />} />
+            <Route path="/management-mba" element={<Bba />} />
+            <Route path="/management-bms" element={<Bms />} />
+            <Route path="/management-bhmct" element={<Bhmct />} />
+            <Route path="/management-mhm" element={<Mhm />} />
+            <Route path="/management-emba" element={<Bhmct />} />
+            <Route path="/management-neet-ug" element={<Exam />} />
+            <Route path="/management-neet-pg" element={<NeetPg />} />
+            <Route path="/management-aiims-pg" element={<Exam />} />
+            <Route path="/management-jipmer-pg" element={<Exam />} />
+            <Route path="/management-pgimer-exam" element={<Exam />} />
+            <Route path="/management-noida" element={<ManagementCollege />} />
+            <Route path="/management-mumbai" element={<ManagementCollege />} />
+            <Route path="/management-bangalore" element={<ManagementCollege />} />
+            <Route path="/management-chennai" element={<ManagementCollege />} />
+            <Route path="/management-pune" element={<ManagementCollege />} />
+            <Route path="/courses-mds" element={<ManagementCollege />} />
+            {/* ------ Law ------------- */}
+            <Route path="/law" element={<Law />} />
+            {/* ------ Exam ------------- */}
             <Route path="/exam" element={<Exam />} />
           </Routes>
           <Footer />

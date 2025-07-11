@@ -1,16 +1,15 @@
 import React from 'react'
 import Tile from '../components/main/Tile'
 import image1 from '../assets/first-img.jpg';
-import { engineeringCollegesData } from './helper/engineeringCollegesData'
+import  {managementCollegesData}  from './helper/managementCollegeData'
 import Header from '../components/courseDetails/Header'
 import image from '../assets/hdr-bg.jpg';
 
-function EngineeringColleges() {
-
+function ManagementCollege() {
     return (
         <div>
             <Header tittle={"Management Colleges"} subTittle={"Top Management College etc..."} BGimage={image} />
-            { engineeringCollegesData.map((para, index) => (
+            { managementCollegesData.map((para, index) => (
                 console.log(para[0].title),
                 < Tile
                     key={index}
@@ -27,4 +26,4 @@ function EngineeringColleges() {
     )
 }
 
-export default EngineeringColleges
+export default ManagementCollege

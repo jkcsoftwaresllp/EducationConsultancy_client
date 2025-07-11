@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/lucknow.jpg'
+import image from '../assets/exam0.jpg'
 import Header from '../components/courseDetails/Header'
 import ContainerBody from '../components/main/ContainerBody'
 import Tile3 from '../components/main/Tile3'
