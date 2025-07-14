@@ -1,33 +1,39 @@
-import React from 'react'
-import styles from './styles/MainBodyFormContainer.module.css'
+import React, { useState } from 'react';
+import styles from './styles/MainBodyFormContainer.module.css';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import bulbImg from '../../assets/bulb.png'
+import bulbImg from '../../assets/bulb.png';
 
 function MainBodyFormContainer() {
-
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
     const onSubmit = (data) => {
         console.log('Form Data:', data);
+        setIsSubmitted(true);
+        reset();
+        setTimeout(() => {
+            setIsSubmitted(false);
+        }, 3000);
     };
 
     return (
         <div>
-            <div className={styles.Contaner} >
+            <div className={styles.Contaner}>
                 <div className={styles.LeftSection}>
                     <h1>THE CAREER ZONE: Your Gateway to Success - The Best Admission Consultancy in Patna, Guiding Students Nationwide for a Bright Future.</h1>
                     <h2>093043 65563</h2>
-                    <div className={styles.icon} >&gt;</div>
+                    <div className={styles.icon}>&gt;</div>
                 </div>
                 <div className={styles.RightSection}>
                     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                         <div className={styles.inputBox}>
-                            {/* Name */}
                             <div>
                                 <input className={styles.name}
                                     type="text"
@@ -36,7 +42,7 @@ function MainBodyFormContainer() {
                                 />
                                 {errors.name && <span>{errors.name.message}</span>}
                             </div>
-                            {/* Phone Number */}
+
                             <div>
                                 <input className={styles.phone}
                                     type="tel"
@@ -52,7 +58,6 @@ function MainBodyFormContainer() {
                                 {errors.phone && <span>{errors.phone.message}</span>}
                             </div>
 
-                            {/* Email */}
                             <div>
                                 <input className={styles.email}
                                     type="email"
@@ -68,7 +73,6 @@ function MainBodyFormContainer() {
                                 {errors.email && <span>{errors.email.message}</span>}
                             </div>
 
-                            {/* Course */}
                             <div>
                                 <input className={styles.course}
                                     type="text"
@@ -77,38 +81,40 @@ function MainBodyFormContainer() {
                                 />
                                 {errors.course && <span>{errors.course.message}</span>}
                             </div>
-                            {/* Name */}
+
                             <div>
                                 <input className={styles.name}
                                     type="text"
                                     placeholder="Education"
-                                    {...register('name')}
+                                    {...register('education')}
                                 />
                             </div>
-                            {/* Name */}
+
                             <div>
                                 <input className={styles.name}
                                     type="text"
                                     placeholder="Location"
-                                    {...register('name')}
+                                    {...register('location')}
                                 />
                             </div>
-
-                            {/* Register Button */}
                         </div>
-                        <div className={styles.btnDiv} >
+
+                        <div className={styles.btnDiv}>
                             <button className={styles.btn} type="submit">SUBMIT NOW</button>
                         </div>
+
+                        {isSubmitted && <p className={styles.successMessage}>Thank you! We have received your details.</p>}
                     </form>
                 </div>
             </div>
-            <div className={styles.Bottom} >
+
+            <div className={styles.Bottom}>
                 <img src={bulbImg} alt="" />
                 <h1>Best Educational Consultancy in Patna</h1>
                 <button>Apply For Admission 2023</button>
             </div>
         </div>
-    )
+    );
 }
 
-export default MainBodyFormContainer
+export default MainBodyFormContainer;
