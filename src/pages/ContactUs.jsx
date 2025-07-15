@@ -1,55 +1,62 @@
-import React from 'react'
-import styles from './styles/ContactUs.module.css'
+import React, { useState } from 'react';
+import styles from './styles/ContactUs.module.css';
 import { useForm } from 'react-hook-form';
 
 function ContactUs() {
-
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
     const onSubmit = (data) => {
         console.log('Form Data:', data);
+        setIsSubmitted(true);
+        reset();
+        setTimeout(() => {
+            setIsSubmitted(false);
+        }, 3000); // Hide success message after 3 seconds
     };
 
     return (
         <div>
-            <div className={styles.Header} >
+            <div className={styles.Header}>
                 <h1>Get in Touch</h1>
                 <h2>Have questions about THE CAREER ZONE ? Need help getting started? Our team is here to help you succeed. Reach out to us anytime.</h2>
                 <h2>Multiple ways to reach us. Choose what works best for you.</h2>
                 <span className={styles.underline}></span>
-                <div className={styles.CardContainer} >
-                    <div className={styles.card} >
+                <div className={styles.CardContainer}>
+                    <div className={styles.card}>
                         <span className={styles.underline}></span>
                         <h1>Experience</h1>
                         <p>20+ Years in Education & Admission Guidance 5000+ Successful Admissions</p>
                     </div>
-                    <div className={styles.card} >
+                    <div className={styles.card}>
                         <span className={styles.underline}></span>
                         <h1>Address</h1>
-                        <p>Address:511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001</p>
+                        <p>Address:511, 5 Floor,Ashiana tower, Exhibition Rd, near HDFC BANK LTD, Ali Nagar Colony, Salimpur Ahra, Patna, Bihar 800001</p>
                     </div>
-                    <div className={styles.card} >
+                    <div className={styles.card}>
                         <span className={styles.underline}></span>
                         <h1>Contact info</h1>
-                        <p>Phone: 93043 65563
-                            Email: info@thecareeezone.co.in</p>
+                        <p>Phone: 93043 65563 Email: info@thecareeezone.co.in</p>
                     </div>
-                    <div className={styles.card} >
+                    <div className={styles.card}>
                         <span className={styles.underline}></span>
                         <h1>Website</h1>
                         <p>Website: www.thecareerzone .co.in Facebook: Facebook .com/thecareerzone .patna</p>
                     </div>
                 </div>
             </div>
-            <div className={styles.body} >
+
+            <div className={styles.body}>
                 <div className={styles.RightSection}>
+                    <h1>Contact Us</h1>
                     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                         <div className={styles.inputBox}>
-                            {/* Name */}
                             <div>
                                 <input className={styles.name}
                                     type="text"
@@ -58,7 +65,7 @@ function ContactUs() {
                                 />
                                 {errors.name && <span>{errors.name.message}</span>}
                             </div>
-                            {/* Phone Number */}
+
                             <div>
                                 <input className={styles.phone}
                                     type="tel"
@@ -74,7 +81,6 @@ function ContactUs() {
                                 {errors.phone && <span>{errors.phone.message}</span>}
                             </div>
 
-                            {/* Email */}
                             <div>
                                 <input className={styles.email}
                                     type="email"
@@ -90,7 +96,6 @@ function ContactUs() {
                                 {errors.email && <span>{errors.email.message}</span>}
                             </div>
 
-                            {/* Course */}
                             <div>
                                 <input className={styles.course}
                                     type="text"
@@ -99,33 +104,34 @@ function ContactUs() {
                                 />
                                 {errors.course && <span>{errors.course.message}</span>}
                             </div>
-                            {/* Name */}
+
                             <div>
                                 <input className={styles.name}
                                     type="text"
                                     placeholder="Education"
-                                    {...register('name')}
+                                    {...register('education')}
                                 />
                             </div>
-                            {/* Name */}
+
                             <div>
                                 <input className={styles.name}
                                     type="text"
                                     placeholder="Location"
-                                    {...register('name')}
+                                    {...register('location')}
                                 />
                             </div>
-
-                            {/* Register Button */}
                         </div>
-                        <div className={styles.btnDiv} >
+
+                        <div className={styles.btnDiv}>
                             <button className={styles.btn} type="submit">SUBMIT NOW</button>
                         </div>
+
+                        {isSubmitted && <p className={styles.successMessage}>Thank you! We received your message.</p>}
                     </form>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default ContactUs
+export default ContactUs;
