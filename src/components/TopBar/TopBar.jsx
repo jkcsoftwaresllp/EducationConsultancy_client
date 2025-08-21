@@ -18,11 +18,7 @@ function TopBar({ address, phone, email }) {
       </div>
       <div className={styles.right}>
         <Button1 color={"red"} text={"ENQUIRY NOW"} />
-        <Button1 text={"BLOGS"} />
-        {/* <HeaderButton onClick={() => setShowForm(true)} label="ENQUIRY NOW" variant="orange" />
-        <HeaderButton label="BLOGS" variant="blue" /> */}
-        {/* <HeaderButton label="LOGIN" variant="green" />
-        <HeaderButton label="SIGN UP" variant="red" /> */}
+        <Button1 text={"BSCC"} path={"https://www.7nishchay-yuvaupmission.bihar.gov.in/"} />
       </div>
     </div>
   );
