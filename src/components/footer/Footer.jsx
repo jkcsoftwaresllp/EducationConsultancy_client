@@ -9,11 +9,11 @@ import linkedinIcon from '../../assets/linkedinIcon.png'
 function Footer() {
     return (
         <div className={styles.Container} >
-            <h1>Top Admission Consultancy in Patna: Admission Expert</h1>
+            <h1>Top Admission Consultancy in Patna: THE CAREER ZONE</h1>
             <div className={styles.box} >
                 <div className={styles.Left} >
                     <h1>THE CAREER ZONE</h1>
-                    <p>your trusted partner in educational guidance and career consultancy for over two decades.</p>
+                    <p>Your trusted partner in educational guidance and career consultancy for over two decades.</p>
                     <p>Guidance for all major streams – Engineering, Medical, Law, Management, and more</p>
                     <p>One-on-one career counseling sessions</p>
                     <p>Full support from application to admission</p>

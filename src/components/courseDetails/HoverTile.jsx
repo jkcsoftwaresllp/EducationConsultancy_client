@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./styles/HoverTile.module.css";
+import { useFormContext } from "../../context/FormContext.jsx";
 
 function TileBox({ items, onClick, label }) {
   if (!items || items.length === 0) return null;
+  const { setShowForm } = useFormContext();
 
   const [title, ...listItems] = items;
 
@@ -21,7 +23,7 @@ function TileBox({ items, onClick, label }) {
           </li>
         ))}
       </ul>
-      <button className={styles.BottomButton}>VIEW MORE COURSES</button>
+      <button className={styles.BottomButton} onClick={()=> setShowForm(true)} >VIEW MORE COURSES</button>
     </div>
   );
 }

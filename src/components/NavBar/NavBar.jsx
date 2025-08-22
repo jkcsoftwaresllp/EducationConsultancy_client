@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./styles/Navbar.module.css";
 import { HoverTile } from "../courseDetails/HoverTile";
 import { menuLinks } from "./styles/helper/menuLink";
+import logo from '../../assets/careerzone.png'
 
 function Navbar({ onCourseClick }) {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ function Navbar({ onCourseClick }) {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>🎓</div>
+      <div className={styles.logo}><img src={logo} alt="" /></div>
 
       <div className={styles.hamburger} onClick={() => setOpen(!open)}>
         ☰
