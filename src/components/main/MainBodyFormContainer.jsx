@@ -14,7 +14,7 @@ function MainBodyFormContainer() {
     const [submitMessage, setSubmitMessage] = useState('');
 
     const onSubmit = async (data) => {
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwsCSKJ2c9h5x_3s_p2XPI9JdFl68_RJ0IN6PHWyW7G_zxZisuN218ilJVBRZZKUF_f/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzlIQChj1FAcgwINq_HdoJWbfHZQJrb318b6A2r6bdRU_69_vsmqtYFgRDB1GlaRHZ9/exec';
 
         try {
             await fetch(scriptURL, {
