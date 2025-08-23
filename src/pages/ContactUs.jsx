@@ -7,18 +7,31 @@ function ContactUs() {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
+        formState: { errors, isSubmitting, isSubmitSuccessful },
     } = useForm();
 
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [submitMessage, setSubmitMessage] = useState('');
 
-    const onSubmit = (data) => {
-        console.log('Form Data:', data);
-        setIsSubmitted(true);
-        reset();
-        setTimeout(() => {
-            setIsSubmitted(false);
-        }, 3000); // Hide success message after 3 seconds
+    const onSubmit = async (data) => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwsCSKJ2c9h5x_3s_p2XPI9JdFl68_RJ0IN6PHWyW7G_zxZisuN218ilJVBRZZKUF_f/exec';
+
+        try {
+            await fetch(scriptURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                mode: 'no-cors',
+                body: JSON.stringify(data),
+            });
+
+            setSubmitMessage('Thank you! We received your message.');
+            reset();
+            setTimeout(() => setSubmitMessage(''), 5000); 
+        } catch (error) {
+            console.error('Submission failed', error);
+            setSubmitMessage('Submission failed. Please try again.');
+        }
     };
 
     return (
@@ -123,10 +136,16 @@ function ContactUs() {
                         </div>
 
                         <div className={styles.btnDiv}>
-                            <button className={styles.btn} type="submit">SUBMIT NOW</button>
+                            <button className={styles.btn} type="submit" disabled={isSubmitting}>
+                                {isSubmitting ? 'SUBMITTING...' : 'SUBMIT NOW'}
+                            </button>
                         </div>
 
-                        {isSubmitted && <p className={styles.successMessage}>Thank you! We received your message.</p>}
+                        {submitMessage && (
+                            <p className={isSubmitSuccessful ? styles.successMessage : styles.errorMessage}>
+                                {submitMessage}
+                            </p>
+                        )}
                     </form>
                 </div>
             </div>
