@@ -16,7 +16,7 @@ function EnquiryForm({ onClose }) {
     const [submitMessage, setSubmitMessage] = useState('');
 
     const onSubmit = async (data) => {
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx146WiMX6S5Sbpod_z0sJnvovHeL4j7dxbT9bNkRNlglRLp_mf8m9eelPfgJ5ueGQdeg/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbylltkWReFEO5pvzeFNXar92o1aMWCzu-oVXzqy3sJG7PeDKup2tLx0yfYOKmKZ1tQ4/exec';
 
         try {
             await fetch(scriptURL, {
