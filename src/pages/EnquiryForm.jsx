@@ -10,18 +10,29 @@ function EnquiryForm({ onClose }) {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
+        formState: { errors, isSubmitting, isSubmitSuccessful },
     } = useForm();
 
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [submitMessage, setSubmitMessage] = useState('');
 
-    const onSubmit = (data) => {
-        console.log('Form Data:', data);
-        setIsSubmitted(true);
-        reset();
-        setTimeout(() => {
-            setIsSubmitted(false);
-        }, 3000);
+    const onSubmit = async (data) => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx146WiMX6S5Sbpod_z0sJnvovHeL4j7dxbT9bNkRNlglRLp_mf8m9eelPfgJ5ueGQdeg/exec';
+
+        try {
+            await fetch(scriptURL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                mode: 'no-cors',
+                body: JSON.stringify(data),
+            });
+
+            setSubmitMessage('Thanks! Your enquiry has been submitted successfully.');
+            reset();
+            setTimeout(() => setSubmitMessage(''), 5000);
+        } catch (error) {
+            console.error('Submission failed', error);
+            setSubmitMessage('Submission failed. Please try again.');
+        }
     };
 
     return (
@@ -80,17 +91,23 @@ function EnquiryForm({ onClose }) {
                             <textarea
                                 className={styles.message}
                                 placeholder="Message"
-                                {...register('message', { required: 'message is required' })}
+                                {...register('message', { required: 'Message is required' })}
                             />
                             {errors.message && <span>{errors.message.message}</span>}
                         </div>
                     </div>
 
                     <div className={styles.btnDiv}>
-                        <button className={styles.btn} type="submit">SEND ENQUIRY</button>
+                        <button className={styles.btn} type="submit" disabled={isSubmitting}>
+                            {isSubmitting ? 'SENDING...' : 'SEND ENQUIRY'}
+                        </button>
                     </div>
 
-                    {isSubmitted && <p className={styles.successMessage}>Thanks! Your enquiry has been submitted successfully.</p>}
+                    {submitMessage && (
+                        <p className={isSubmitSuccessful ? styles.successMessage : styles.errorMessage}>
+                            {submitMessage}
+                        </p>
+                    )}
                 </form>
             </div>
         </div>
